@@ -8,15 +8,13 @@ interface NavProps{
 const Navbar:FC<NavProps> = ({mode,onChangeMode}) => {
   return (
 
-    <nav className={`bg-black shadow-md sticky w-full`}>
+    <nav className={`bg-black shadow-md w-full`}>
       <div className={`flex justify-between h-20 items-center ${mode === true ? "text-white":"text-black"}`}>
       <ul className='flex ms-5'>
         <li>
-          <a href="#" className=" p-4 text-white hover:color-orange-500">My Movie</a></li>
+          <a href="/" className=" p-4 text-white hover:color-orange-500">My Movie</a></li>
         <li>
-          <a href="#" className=" p-4 text-white hover:color-orange-500">Movie</a></li>
-        <li>
-          <a href="Favotire.tsx" className=" p-4 text-white hover:color-orange-500">Favorite</a></li>
+          <a href="#" className=" p-4 text-white hover:color-orange-500">Favorite</a></li>
       </ul>
       <button
           onClick={onChangeMode}

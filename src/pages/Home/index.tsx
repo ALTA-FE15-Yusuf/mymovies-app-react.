@@ -33,6 +33,7 @@ useEffect(() => {
 },[])
 
 const navigateTo = (id: number) => {
+  console.log(id)
     navigate(`/detail/${id}`, {
       state: {
         id: id,
@@ -43,7 +44,7 @@ const navigateTo = (id: number) => {
 
   return (
     <section className={`${mode === true ? "bg-black" : "bg-white"}`}>
-      <div className='BG'>
+      <div className='BG width={200} height={200}'>
         <Navbar onChangeMode={() => dispatch(toogleMode())}
         mode={mode}
         />
